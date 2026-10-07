@@ -4,7 +4,7 @@ import StudentCard from "./StudentCard.jsx";
 const initialStudents = [
   {
     id: "2026-001",
-    name: "Allysa Macalalad",
+    name: "Allyssa Macalalad",
     course: "BS Information Technology",
     year: "2nd Year",
   },
