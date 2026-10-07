@@ -15,6 +15,7 @@
 .card-actions {
   display: flex;
   gap: 6px;
+  margin-left: auto;
 }
 
 * {
@@ -425,48 +426,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.avatar {
-  display: grid;
-  width: 43px;
-  height: 43px;
-  place-items: center;
-  border: 1px solid transparent;
-  border-radius: 13px;
-  font-family: "Manrope", sans-serif;
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.avatar-blue {
-  border-color: #e0e5ff;
-  background: #edf0ff;
-  color: #596be0;
-}
-
-.avatar-rose {
-  border-color: #f8e2ea;
-  background: #fff0f5;
-  color: #ce718d;
-}
-
-.avatar-amber {
-  border-color: #f6e9d5;
-  background: #fff6e9;
-  color: #bd8841;
-}
-
-.avatar-mint {
-  border-color: #dbefe8;
-  background: #eaf8f2;
-  color: #50967b;
-}
-
-.avatar-lilac {
-  border-color: #ebe2f8;
-  background: #f5efff;
-  color: #8968b9;
 }
 
 .favorite-button {

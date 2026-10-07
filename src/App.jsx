@@ -4,47 +4,23 @@ import StudentCard from "./StudentCard.jsx";
 const initialStudents = [
   {
     id: "2026-001",
-    name: "Juan Dela Cruz",
+    name: "Allysa Macalalad",
     course: "BS Information Technology",
     year: "2nd Year",
-    initials: "JD",
-    color: "blue",
   },
   {
     id: "2026-002",
-    name: "Maria Santos",
+    name: "Diane Noche",
     course: "BS Information Technology",
     year: "1st Year",
-    initials: "MS",
-    color: "rose",
   },
   {
     id: "2026-003",
-    name: "Pedro Reyes",
+    name: "Marc Jimuel Liup",
     course: "BS Computer Science",
     year: "3rd Year",
-    initials: "PR",
-    color: "amber",
-  },
-  {
-    id: "2026-004",
-    name: "Ana Garcia",
-    course: "BS Information Systems",
-    year: "2nd Year",
-    initials: "AG",
-    color: "mint",
-  },
-  {
-    id: "2026-005",
-    name: "Miguel Torres",
-    course: "BS Computer Science",
-    year: "4th Year",
-    initials: "MT",
-    color: "lilac",
   },
 ];
-
-const avatarColors = ["blue", "rose", "amber", "mint", "lilac"];
 
 export default function App() {
   const [students, setStudents] = useState(initialStudents);
@@ -73,12 +49,6 @@ export default function App() {
       return;
     }
 
-    student.initials = student.name
-      .split(/\s+/)
-      .slice(0, 2)
-      .map((part) => part[0].toUpperCase())
-      .join("");
-    student.color = avatarColors[students.length % avatarColors.length];
     setStudents((currentStudents) => [...currentStudents, student]);
     setSearch("");
     setAddError("");

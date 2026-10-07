@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function StudentCard({ name, id, course, year, initials, color, onDelete }) {
+export default function StudentCard({ name, id, course, year, onDelete }) {
   const [favoriteCount, setFavoriteCount] = useState(0);
   const [isFavorite, setIsFavorite] = useState(false);
 
@@ -12,7 +12,6 @@ export default function StudentCard({ name, id, course, year, initials, color, o
   return (
     <article className="student-card">
       <div className="card-top">
-        <div className={`avatar avatar-${color}`} aria-hidden="true">{initials}</div>
         <div className="card-actions">
           <button
             className={`favorite-button${isFavorite ? " is-favorite" : ""}`}
